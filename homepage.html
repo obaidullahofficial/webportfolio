@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            background-color: #4CAF50;
+            margin: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tabs button {
+            background-color: #555;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border-radius: 5px;
+        }
+
+        .tabs button:hover {
+            background-color: #777;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tabs button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Different background colors for each student's tab content */
+        #Moiz { background-color: #f0f8ff; }
+        #MuhammadZeeshan { background-color: #f5f5dc; }
+        #AliAfzal { background-color: #ffebcd; }
+        #RajaHabib { background-color: #e6e6fa; }
+        #AbdulBasit { background-color: #fffacd; }
+        #Abdullah { background-color: #ffe4e1; }
+        #Ifsan { background-color: #fafad2; }
+        #AliyaSaqib { background-color: #e0ffff; }
+        #Zainab { background-color: #f0fff0; }
+        #Obaidullah { background-color: #fff0f5; }
+    </style>
+</head>
+<body>
+
+    <h1>Team Members</h1>
+
+    <!-- Tab buttons -->
+    <div class="tabs">
+        <button class="tab-link" onclick="openTab(event, 'Moiz')">Moiz</button>
+        <button class="tab-link" onclick="openTab(event, 'MuhammadZeeshan')">Muhammad Zeeshan</button>
+        <button class="tab-link" onclick="openTab(event, 'AliAfzal')">Ali Afzal</button>
+        <button class="tab-link" onclick="openTab(event, 'RajaHabib')">Raja Habib</button>
+        <button class="tab-link" onclick="openTab(event, 'AbdulBasit')">Abdul Basit</button>
+        <button class="tab-link" onclick="openTab(event, 'Abdullah')">Abdullah</button>
+        <button class="tab-link" onclick="openTab(event, 'Ifsan')">Ifsan</button>
+        <button class="tab-link" onclick="openTab(event, 'AliyaSaqib')">Aliya Saqib</button>
+        <button class="tab-link" onclick="openTab(event, 'Zainab')">Zainab</button>
+        <button class="tab-link" onclick="window.location.href='obaidportfolio.html'">Obaidullah</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Moiz" class="tab-content">
+        <h2>Moiz</h2>
+        <p>Moiz's portfolio details will be here.</p>
+    </div>
+
+    <div id="MuhammadZeeshan" class="tab-content">
+        <h2>Muhammad Zeeshan</h2>
+        <p>Muhammad Zeeshan's portfolio details will be here.</p>
+    </div>
+
+    <div id="AliAfzal" class="tab-content">
+        <h2>Ali Afzal</h2>
+        <p>Ali Afzal's portfolio details will be here.</p>
+    </div>
+
+    <div id="RajaHabib" class="tab-content">
+        <h2>Raja Habib</h2>
+        <p>Raja Habib's portfolio details will be here.</p>
+    </div>
+
+    <div id="AbdulBasit" class="tab-content">
+        <h2>Abdul Basit</h2>
+        <p>Abdul Basit's portfolio details will be here.</p>
+    </div>
+
+    <div id="Abdullah" class="tab-content">
+        <h2>Abdullah</h2>
+        <p>Abdullah's portfolio details will be here.</p>
+    </div>
+
+    <div id="Ifsan" class="tab-content">
+        <h2>Ifsan</h2>
+        <p>Ifsan's portfolio details will be here.</p>
+    </div>
+
+    <div id="AliyaSaqib" class="tab-content">
+        <h2>Aliya Saqib</h2>
+        <p>Aliya Saqib's portfolio details will be here.</p>
+    </div>
+
+    <div id="Zainab" class="tab-content">
+        <h2>Zainab</h2>
+        <p>Zainab's portfolio details will be here.</p>
+    </div>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+
+        // Open the first tab by default
+        document.getElementsByClassName("tab-link")[0].click();
+    </script>
+
+</body>
+</html>
