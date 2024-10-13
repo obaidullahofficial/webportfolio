@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Moiz | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            border-bottom: 3px solid #4a90e2;
+            display: inline-block;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 0.5rem;
+            flex: 0 1 30%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill h4 {
+            font-size: 1.5rem;
+            color: #4a90e2;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .home-btn {
+            position: fixed;
+            top: 90%;
+            right: 2%;
+            padding: 1rem 2rem;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background-color: #357ab7;
+        }
+
+        .project-info {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-info p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skill {
+                flex: 0 1 100%;
+            }
+
+            .home-btn {
+                right: 1%;
+                top: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Muhammad Moiz</h1>
+    <h2>5th Semester IT Student at AIR University</h2>
+</header>
+
+<div class="container">
+    <section class="about">
+        <h3>About Me</h3>
+        <p>Hi, I'm Muhammad Moiz, a 5th semester IT student from AIR University. I have a passion for technology, 
+           specializing in web development and data science. I love coding and am always eager to learn new skills.</p>
+    </section>
+
+    <section class="skills">
+        <h3>Skills</h3>
+        <div class="skills-list">
+            <div class="skill">
+                <h4>Web Development</h4>
+                <p>Experienced in HTML, CSS, JavaScript, and responsive design.</p>
+            </div>
+            <div class="skill">
+                <h4>Data Science</h4>
+                <p>Proficient in data analysis, visualization, and machine learning techniques.</p>
+            </div>
+            <div class="skill">
+                <h4>Python</h4>
+                <p>Skilled in Python programming for automation and data processing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:221073@students.au.edu.com">221073@students.au.edu.com</a></p>
+    </section>
+
+    <section class="project-info">
+        <h3>Project Info</h3>
+        <p>This website is a GitHub practice project with multiple contributors. The goal is to build, collaborate, 
+           and improve coding skills through teamwork.</p>
+    </section>
+
+    <button class="home-btn" onclick="returnHome()">Return to Home Page</button>
+</div>
+
+<script>
+    function returnHome() {
+        window.location.href = 'index.html'; // Change this to your actual home page link
+    }
+</script>
+
+</body>
+</html>
+
