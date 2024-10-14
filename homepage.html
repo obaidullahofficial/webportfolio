@@ -101,12 +101,12 @@
         <button class="tab-link" onclick="openTab(event, 'Ifsan')">Ifsan</button>
         <button class="tab-link" onclick="openTab(event, 'AliyaSaqib')">Aliya Saqib</button>
         <button class="tab-link" onclick="openTab(event, 'Zainab')">Zainab</button>
-        <button class="tab-link" onclick="window.location.href='obaidportfolio.html'">Obaidullah</button>
+        <button class="tab-link" onclick="openTab(event, 'Obaidullah')">Obaidullah</button>
     </div>
 
     <div id="Moiz" class="tab-content">
         <h2>Moiz</h2>
-	<iframe src="Moiz.html" title="Muhammad Moiz | Portfolio"></iframe>
+        <iframe src="Moiz.html" title="Muhammad Moiz | Portfolio"></iframe>
     </div>
 
     <div id="MuhammadZeeshan" class="tab-content">
@@ -149,22 +149,29 @@
         <p>Zainab's portfolio details will be here.</p>
     </div>
 
+    <div id="Obaidullah" class="tab-content">
+        <h2>Obaidullah</h2>
+        <iframe src="obaidportfolio.html" title="Obaidullah's Portfolio"></iframe>
+    </div>
+
     <script>
         function openTab(event, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "none"; // Hide all tab content
+                tabcontent[i].classList.remove("active"); // Remove active class
             }
             tablinks = document.getElementsByClassName("tab-link");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                tablinks[i].className = tablinks[i].className.replace(" active", ""); // Remove active class from all tabs
             }
-            document.getElementById(tabName).style.display = "block";
-            event.currentTarget.className += " active";
+            document.getElementById(tabName).style.display = "block"; // Show the clicked tab's content
+            document.getElementById(tabName).classList.add("active"); // Add active class
+            event.currentTarget.className += " active"; // Add active class to the clicked tab
         }
 
-        document.getElementsByClassName("tab-link")[0].click();
+        document.getElementsByClassName("tab-link")[0].click(); // Simulate a click on the first tab
     </script>
 
 </body>
