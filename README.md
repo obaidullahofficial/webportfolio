@@ -12,7 +12,7 @@ This repository contains all the individual portfolio pages, which are linked fr
 
 ### Contributors
 - **Ali Afzal** - [Portfolio](./aliafzal.html)
-- **Moiz** - [Portfolio](./moiz.html)
+- **Moiz** - [Portfolio](./Moiz.html)
 - **Muhammad Zeeshan** - [Portfolio](./muhammadzeeshan.html)
 - **Zainab** - [Portfolio](./zainab.html)
 - **Aliya Saqib** - [Portfolio](./aliyasaqib.html)
