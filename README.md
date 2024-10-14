@@ -16,7 +16,7 @@ This repository contains all the individual portfolio pages, which are linked fr
 - **Muhammad Zeeshan** - [Portfolio](./muhammadzeeshan.html)
 - **Zainab** - [Portfolio](./zainab.html)
 - **Aliya Saqib** - [Portfolio](./aliyasaqib.html)
-- **Ifsan** - [Portfolio](./ifsan.html)
+- **Ifsan** - [Portfolio](./ifsanimran.html)
 - **Abdullah** - [Portfolio](./abdullah.html)
 - **Raja Habib** - [Portfolio](./habib.html)
 - **Abdul Basit** - [Portfolio](./abdulbasit.html)
