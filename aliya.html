@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F7F7; /* Light Gray */
+            color: #333333; /* Dark Charcoal */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Cinzel', serif; /* Different font for the title */
+            background-color: #333333; /* Dark Charcoal */
+            color: #FFD700; /* Gold */
+            padding: 40px;
+            margin: 0;
+            font-size: 48px; /* Increased font size */
+            border-bottom: 5px solid #FFD700; /* Gold underline */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase; /* Uppercase title */
+            letter-spacing: 1px; /* Spacing between letters */
+        }
+
+        .content {
+            max-width: 900px; /* Slightly narrower for better readability */
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White background for content */
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .content:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        h2,
+        h3 {
+            color: #333333; /* Dark Charcoal */
+            margin-top: 0;
+            font-weight: 500;
+            border-bottom: 2px solid #FFD700; /* Gold underline effect */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p,
+        ul {
+            line-height: 1.8; /* Increased line height for readability */
+            margin: 10px 0; /* Margin around paragraphs */
+        }
+
+        a {
+            color: #FFD700; /* Gold for links */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for link color */
+        }
+
+        a:hover {
+            color: #FFC300; /* Slightly lighter gold on hover */
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            position: relative; /* For custom bullets */
+        }
+
+        ul li::before {
+            content: '•'; /* Custom bullet point */
+            color: #333333; /* Dark Charcoal for bullets */
+            position: absolute;
+            left: -20px; /* Position bullets nicely */
+            font-weight: bold;
+        }
+
+        .skills,
+        .projects,
+        .experience,
+        .interests {
+            margin-bottom: 40px;
+            padding: 20px; /* Added padding for sections */
+            background-color: #F9F9F9; /* Light background for sections */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease; /* Smooth background transition */
+        }
+
+        .skills:hover,
+        .projects:hover,
+        .experience:hover,
+        .interests:hover {
+            background-color: #EAEAEA; /* Darken on hover */
+        }
+
+        .section-title {
+            border-bottom: 2px solid #333333; /* Dark Charcoal */
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e9ecef; /* Light gray for footer */
+            margin-top: 30px;
+            border-top: 3px solid #333333; /* Dark Charcoal */
+        }
+
+        .contact-info a {
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFD700; /* Gold for contact links */
+            transition: color 0.3s ease; /* Smooth transition for contact links */
+        }
+
+        .contact-info a:hover {
+            color: #FFC300; /* Lighter gold on hover */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #FFD700; /* Gold button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth button transition */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Button shadow */
+        }
+
+        .btn:hover {
+            background-color: #FFC300; /* Lighter gold on hover */
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 36px; /* Adjusted font size on mobile */
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 22px; /* Smaller titles on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Aliya's Portfolio</h1>
+
+    <div class="content">
+        <section class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm Aliya Saqib, a passionate software tester fueled by curiosity to uncover issues before they become problems. I have a sharp eye for detail, an instinct for identifying flaws, and a relentless drive to ensure high-quality, bug-free software.</p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Functional Testing, Regression Testing, Performance Testing, Security Testing, Usability Testing</li>
+                <li>Networking: Wireshark, Cisco Packet Tracer, IIS Management</li>
+                <li>DevOps: Docker, Kubernetes, GitHub Actions, CI/CD Pipelines</li>
+                <li>Version Control: Git, GitHub, GitLab</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><strong>Cloud-Based Task Management App:</strong> Led the development of a scalable task management system using React and AWS Lambda, with real-time notifications and cloud storage integration.</li>
+                <li><strong>E-Commerce Platform:</strong> Built a full-featured e-commerce platform with a microservices architecture, including a secure payment system using Stripe API.</li>
+                <li><strong>Open-Source Contribution:</strong> Contributed to an open-source machine learning library, improving the efficiency of data preprocessing modules by 20%.</li>
+                <li><strong>Personal Portfolio Website:</strong> Developed and maintained a personal website using React and Node.js.</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <ul>
+                <li><strong>US-Based Testing Company:</strong> Senior Software Tester responsible for test strategies and bug tracking.</li>
+                <li><strong>Senior Software Engineer, XYZ Corp:</strong> Led a team in building a SaaS product, responsible for architecture and performance optimization.</li>
+                <li><strong>DevOps Engineer, ABC Tech:</strong> Developed CI/CD pipelines, reducing deployment time by 50%.</li>
+            </ul>
+        </section>
+
+        <section class="interests">
+            <h2 class="section-title">Personal Interests and Entrepreneurial Goals</h2>
+            <p>I have a strong interest in entrepreneurship, particularly in the fashion and accessories industry. I am passionate about creating unique designs with a focus on launching my own line of bags and accessories.</p>
+        </section>
+
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:aliyasaqib019@gmail.com">aliyasaqib019@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/aliyasaqib19">aliyasaqib19@github.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aliya-saqib-263a71260/">aliya@linkedin.com</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
