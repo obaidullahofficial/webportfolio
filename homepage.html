@@ -77,7 +77,11 @@
         #Abdullah { background-color: #8ebeee; }
 
         #Ifsan { background-color: #fafad2; }
+
         #AliyaSaqib { background-color: rgba(0, 0, 0, 0.2); }
+
+        #AliyaSaqib { background-color: #e0ffff; }
+
         #Zainab { background-color: #f6e7ec; }
         #Obaidullah { background-color: #fff0f5; }
 
@@ -145,7 +149,7 @@
 
     <div id="Ifsan" class="tab-content">
         <h2>Ifsan</h2>
-        <p>Ifsan's portfolio details will be here.</p>
+        <iframe src="ifsanimran.html" title="Ifsan Imran's Portfolio"></iframe>
     </div>
 
     <div id="AliyaSaqib" class="tab-content">
@@ -168,6 +172,13 @@
     <div id="Obaidullah" class="tab-content">
         <h2>Obaidullah</h2>
         <iframe src="obaidportfolio.html" title="Obaidullah's Portfolio"></iframe>
+
+    </div>
+
+    <div id="Obaidullah" class="tab-content">
+        <h2>Obaidullah</h2>
+        <iframe src="obaidportfolio.html" title="Obaidullah's Portfolio"></iframe>
+
     </div>
 
     <script>
@@ -186,6 +197,10 @@
             document.getElementById(tabName).classList.add("active"); // Add active class
             event.currentTarget.className += " active"; // Add active class to the clicked tab
         }
+
+
+        document.getElementsByClassName("tab-link")[0].click(); // Simulate a click on the first tab
+
 
 
         document.getElementsByClassName("tab-link")[0].click(); // Simulate a click on the first tab
