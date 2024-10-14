@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Muhammad Habib Ur Rehman - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        section {
+            display: none;
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .about p, .education p, .skills ul {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            margin-bottom: 10px;
+        }
+
+        .skills strong {
+            color: #16a085;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Raja Muhammad Habib Ur Rehman</h1>
+            <p class="intro">Aspiring IT Professional | Passionate about Programming, Web Development, DevOps, and Networking</p>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('education')">Education</button>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Raja Muhammad Habib Ur Rehman, currently pursuing a Bachelor's degree in Information Technology (BSIT) from Air University. I'm in my 5th semester and consistently growing my knowledge in IT fields like programming, web development, networking, and DevOps. Apart from academics, I'm highly active in sports, particularly cricket and volleyball.</p>
+            <p>I'm eager to apply my skills in real-world projects and look forward to contributing to innovative solutions in the tech industry.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C++, Python, JavaScript</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+                <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD pipelines, Cloud Services</li>
+                <li><strong>Networking:</strong> TCP/IP, Network Security, Router Configurations</li>
+                <li><strong>Sports:</strong> Cricket, Volleyball (Leadership and Teamwork Skills)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>Air University, Islamabad</strong></p>
+            <p>Bachelor of Science in Information Technology (BSIT) | 5th Semester</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Feel free to connect with me for any opportunities or collaborations!</p>
+            <p>Email: <a href="mailto:habibkhanrajah@gmail.com" style="color: #ecf0f1;">habibkhanrajah@gmail.com</a></p>
+            <p>Contact: +92 344 5261974</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections first
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const section = document.getElementById(sectionId);
+            section.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
