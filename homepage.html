@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,7 +67,6 @@
             display: block;
         }
 
-        /* Different background colors for each student's tab content */
         #Moiz { background-color: #f0f8ff; }
         #MuhammadZeeshan { background-color: #f5f5dc; }
         #AliAfzal { background-color: #ffebcd; }
@@ -78,13 +77,20 @@
         #AliyaSaqib { background-color: #e0ffff; }
         #Zainab { background-color: #f0fff0; }
         #Obaidullah { background-color: #fff0f5; }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 
     <h1>Team Members</h1>
 
-    <!-- Tab buttons -->
     <div class="tabs">
         <button class="tab-link" onclick="openTab(event, 'Moiz')">Moiz</button>
         <button class="tab-link" onclick="openTab(event, 'MuhammadZeeshan')">Muhammad Zeeshan</button>
@@ -98,15 +104,14 @@
         <button class="tab-link" onclick="window.location.href='obaidportfolio.html'">Obaidullah</button>
     </div>
 
-    <!-- Tab content -->
     <div id="Moiz" class="tab-content">
         <h2>Moiz</h2>
-        <p>Moiz's portfolio details will be here.</p>
+	<iframe src="Moiz.html" title="Muhammad Moiz | Portfolio"></iframe>
     </div>
 
     <div id="MuhammadZeeshan" class="tab-content">
         <h2>Muhammad Zeeshan</h2>
-        <p>Muhammad Zeeshan's portfolio details will be here.</p>
+        <iframe src="muhammadzeeshan.html" title="Muhammad Zeeshan's Portfolio"></iframe>
     </div>
 
     <div id="AliAfzal" class="tab-content">
@@ -159,7 +164,6 @@
             event.currentTarget.className += " active";
         }
 
-        // Open the first tab by default
         document.getElementsByClassName("tab-link")[0].click();
     </script>
 
